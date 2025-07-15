@@ -1,0 +1,14 @@
+/home/jack/Documents/anjay/bin/Debug/net9.0/anjay
+/home/jack/Documents/anjay/bin/Debug/net9.0/anjay.deps.json
+/home/jack/Documents/anjay/bin/Debug/net9.0/anjay.runtimeconfig.json
+/home/jack/Documents/anjay/bin/Debug/net9.0/anjay.dll
+/home/jack/Documents/anjay/bin/Debug/net9.0/anjay.pdb
+/home/jack/Documents/anjay/obj/Debug/net9.0/anjay.GeneratedMSBuildEditorConfig.editorconfig
+/home/jack/Documents/anjay/obj/Debug/net9.0/anjay.AssemblyInfoInputs.cache
+/home/jack/Documents/anjay/obj/Debug/net9.0/anjay.AssemblyInfo.cs
+/home/jack/Documents/anjay/obj/Debug/net9.0/anjay.csproj.CoreCompileInputs.cache
+/home/jack/Documents/anjay/obj/Debug/net9.0/anjay.dll
+/home/jack/Documents/anjay/obj/Debug/net9.0/refint/anjay.dll
+/home/jack/Documents/anjay/obj/Debug/net9.0/anjay.pdb
+/home/jack/Documents/anjay/obj/Debug/net9.0/anjay.genruntimeconfig.cache
+/home/jack/Documents/anjay/obj/Debug/net9.0/ref/anjay.dll
