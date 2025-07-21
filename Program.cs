@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace anjay
 {
@@ -6,28 +6,53 @@ namespace anjay
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a Number ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Select operations");
-            string operations = Console.ReadLine();
-
-
-            Console.WriteLine("Enter a Number ");
-            int num2 = Convert.ToInt32(Console.ReadLine());
-
-            if (operations == "+") {
-                Console.WriteLine(num1 + num2);
-            }if (operations == "*"){
-                Console.WriteLine(num1 * num2);                
-            }if (operations == "/")
+            try
             {
-                Console.WriteLine(num1 / num2);
+
+
+                Console.Write("Enter a Number ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Select operations");
+                string operations = Console.ReadLine();
+
+
+                Console.WriteLine("Enter a Number ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+
+                switch (operations)
+                {
+                    case "+":
+                        Console.WriteLine(num1 + num2);
+                        break;
+                    case "-":
+                        Console.WriteLine(num1 - num2);
+                        break;
+                    case "*":
+                        Console.WriteLine(num1 * num2);
+                        break;
+                    case "/":
+                        if (num2 == 0) throw new DivideByZeroException("Tidak bisa dibagi dengan nol");
+                        Console.WriteLine(num1 / num2);
+                        break;
+                    default:
+                        Console.WriteLine("Operasi tidak dikenali");
+                        return;
+                }
+
             }
-            else
+            catch (FormatException)
             {
-                Console.WriteLine("Maaf format operasi anda tidak benar");
+                Console.WriteLine("Input Harus berupa angka");
             }
-        }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine($"Error: {e.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("Terima kasih sudah menggunakan kalkulator");
+            }
+            }
     }
 }
